@@ -16,7 +16,7 @@ https://github-health-checker-1.onrender.com/
 
 ## 🎥 Demo Video
 
-*(Demo video goes here - place your video in the `assets/` folder and update this section)*
+[Watch the Demo Video on Google Drive](https://drive.google.com/drive/folders/12P7acqSp3uH_g6neTTVBHawtAw7Mmu2u?usp=sharing)
 
 ---
 
