@@ -12,7 +12,7 @@ https://github-health-checker-1.onrender.com/
 
 ## 📸 Screenshots
 
-*(Screenshot goes here - place your image in the `assets/` folder and update this section)*
+[View Screenshots on Google Drive](https://drive.google.com/drive/folders/1nQ9Hp1J51G5kk0GDDGVoP5ieogdNelXa?usp=sharing)
 
 ## 🎥 Demo Video
 
