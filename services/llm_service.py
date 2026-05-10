@@ -58,22 +58,20 @@ def generate_repository_summary_stream(repo_name: str, metrics: dict, health_dat
 
     try:
         completion = client.chat.completions.create(
-            model="nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.6,
-            top_p=0.95,
-            max_tokens=65536,
-            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
+            model="meta/llama-3.1-8b-instruct",
+            messages=[
+                {"role": "system", "content": "You are a concise expert software engineering consultant. Provide direct and professional insights. Avoid repeating yourself."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            top_p=0.9,
+            max_tokens=1024,
             stream=True
         )
         
         for chunk in completion:
             if not chunk.choices:
                 continue
-                
-            reasoning = getattr(chunk.choices[0].delta, "reasoning_content", None)
-            if reasoning:
-                yield ("reasoning", reasoning)
                 
             content = chunk.choices[0].delta.content
             if content is not None:

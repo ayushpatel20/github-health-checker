@@ -138,18 +138,11 @@ if analyze_button and repo_url:
                 # AI Summary Section
                 st.subheader("🤖 AI-Powered Insights")
                 
-                reasoning_expander = st.expander("Thinking Process...", expanded=False)
-                reasoning_container = reasoning_expander.empty()
                 content_container = st.empty()
-                
-                reasoning_text = ""
                 content_text = ""
                 
                 for chunk_type, text in generate_repository_summary_stream(f"{owner}/{repo}", metrics, health_data):
-                    if chunk_type == "reasoning":
-                        reasoning_text += text
-                        reasoning_container.markdown(reasoning_text)
-                    elif chunk_type == "content":
+                    if chunk_type == "content":
                         content_text += text
                         content_container.markdown(content_text)
                         
