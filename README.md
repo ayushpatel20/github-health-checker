@@ -12,13 +12,11 @@ https://github-health-checker-1.onrender.com/
 
 ## 📸 Screenshots
 
-![Dashboard Screenshot](assets/screenshot_placeholder.png)  
-*(Add a screenshot of your dashboard here)*
+*(Screenshot goes here - place your image in the `assets/` folder and update this section)*
 
 ## 🎥 Demo Video
 
-[Watch the Demo Video here](assets/demo_placeholder.mp4)  
-*(Add a link to your demo video here)*
+*(Demo video goes here - place your video in the `assets/` folder and update this section)*
 
 ---
 
