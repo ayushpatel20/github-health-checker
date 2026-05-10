@@ -6,6 +6,10 @@
 
 A clean, modular Python web application built with Streamlit that analyzes any public GitHub repository to determine its health, activity, and maintenance quality. It uses the GitHub REST API for data gathering and NVIDIA's free LLM endpoint (Llama 3) to generate intelligent insights and recommendations.
 
+## 🌐 Live Demo
+
+https://github-health-checker-1.onrender.com/
+
 ## 📸 Screenshots
 
 ![Dashboard Screenshot](assets/screenshot_placeholder.png)  
@@ -24,8 +28,23 @@ A clean, modular Python web application built with Streamlit that analyzes any p
 - **Repository Health Score**: Calculates a custom 0-100 score based on recent activity, documentation, issue resolution rates, and community size.
 - **AI-Powered Insights**: Integrates with NVIDIA's NIM API to generate natural language summaries, risk detection, and actionable suggestions.
 - **Visual Analytics**: Interactive Plotly charts comparing open vs. closed issues and displaying key repository stats.
-- **Clean UI**: Built with Streamlit, featuring loading indicators, metric cards, and a clean, beginner-friendly design.
+- **Clean UI**: Built with Streamlit, featuring loading indicators, metric cards, and a clean and responsive design.
 - **Downloadable Reports**: Export your analysis as a Markdown report with one click.
+
+## 📊 Health Metrics Used
+
+The repository health score is calculated using:
+
+- Recent commit activity
+- Open vs closed issues
+- Pull request activity
+- Number of contributors
+- Star and fork count
+- Repository update frequency
+- Documentation availability
+- Release activity
+
+Each metric contributes to an overall repository health score between 0–100.
 
 ## 🛠️ Tech Stack
 
